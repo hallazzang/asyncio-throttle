@@ -5,7 +5,7 @@ from setuptools import setup
 asyncio-throttle
 ================
 
-|pypi-version| |pypi-license|
+|travis-ci| |pypi-version| |pypi-license|
 
 Simple, easy-to-use throttler for asyncio.
 
@@ -91,6 +91,9 @@ with ``aiohttp`` too:
 
 .. |pypi-license| image:: https://img.shields.io/pypi/l/asyncio-throttle.svg?style=flat-square
    :target: https://pypi.python.org/pypi/asyncio-throttle/
+
+.. |travis-ci| image:: https://travis-ci.org/hallazzang/asyncio-throttle.svg?branch=master
+    :target: https://travis-ci.org/hallazzang/asyncio-throttle
 
 """
 
