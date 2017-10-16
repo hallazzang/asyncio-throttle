@@ -8,7 +8,7 @@ def get_long_description(path):
 
 setup(
     name='asyncio-throttle',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/hallazzang/asyncio-throttle',
     license='MIT',
     author='hallazzang',
@@ -16,6 +16,7 @@ setup(
     description='Simple, easy-to-use throttler for asyncio',
     long_description=get_long_description('README.rst'),
     py_modules=['asyncio_throttle'],
+    python_requires='>=3.5',
     zip_safe=False,
     platforms='any',
     classifiers=[
@@ -25,6 +26,7 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3 :: Only',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries :: Python Modules',
