@@ -1,6 +1,6 @@
 ================
 asyncio-throttle
-===============
+================
 
 Simple, easy-to-use throttler for asyncio.
 
@@ -40,3 +40,4 @@ Installation
 .. code:: bash
 
     $ pip install asyncio-throttle
+
