@@ -96,7 +96,7 @@ with ``aiohttp`` too:
 
 setup(
     name='asyncio-throttle',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/hallazzang/asyncio-throttle',
     license='MIT',
     author='hallazzang',

@@ -1,6 +1,5 @@
 import time
 import asyncio
-
 from collections import deque
 
 class Throttler:
