@@ -52,9 +52,9 @@ Installation
 Usage
 -----
 
-`asyncio_throttle.Throttler` introduces simple APIs:
-`flush()` and `acquire()`. But you will not be interested in those
-because you can just use it within `with` statement and it looks nicer.
+``asyncio_throttle.Throttler`` introduces simple APIs:
+``flush()`` and ``acquire()``. But you will not be interested in those
+because you can just use it within ``with`` statement and it looks nicer.
 
 First, create a throttler given desired rate limit.
 For example if you want to limit rate to 500/min, you can make it as:
@@ -66,15 +66,15 @@ For example if you want to limit rate to 500/min, you can make it as:
     throttler = Throttler(rate_limit=500, period=60)
 
 Then whenever you want to do some jobs which should have limited
-rate(e.g. sending request to server), Put it in `async with` statement:
+rate(e.g. sending request to server), Put it in ``async with`` statement:
 
 .. code:: python
 
     async with throttler:
         send_a_request()
 
-It's that easy. `asyncio_throttler` can be easily integrated
-with `aiohttp` too:
+It's that easy. ``asyncio_throttler`` can be easily integrated
+with ``aiohttp`` too:
 
 .. code:: python
 
