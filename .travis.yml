@@ -6,4 +6,5 @@ python:
     - "3.6-dev"
     - "3.7-dev"
     - "nightly"
+install: "pip install -U asyncio-throttle"
 script: pytest
