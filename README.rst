@@ -37,7 +37,23 @@ Example
     loop.run_until_complete(main())
     loop.close()
 
-Here I limited work rate to 5/sec while there are 5 workers.
+Here I limited work rate to 5/sec while there are 5 workers. And the result:
+
+.. code:: plain
+
+    1508273760.3462772 Worker #2: Bang!
+    1508273760.590009 Worker #3: Bang!
+    1508273760.856431 Worker #0: Bang!
+    1508273761.0110679 Worker #2: Bang!
+    1508273761.086856 Worker #4: Bang!
+    1508273761.350699 Worker #3: Bang!
+    1508273761.5906 Worker #1: Bang!
+    1508273761.8655958 Worker #4: Bang!
+    1508273762.224158 Worker #0: Bang!
+    1508273762.600234 Worker #2: Bang!
+    1508273762.694332 Worker #2: Bang!
+    1508273762.726774 Worker #0: Bang!
+    1508273762.944273 Worker #4: Bang!
 
 Installation
 ------------
