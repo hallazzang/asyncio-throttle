@@ -2,7 +2,7 @@
 asyncio-throttle
 ================
 
-|travis-ci| |pypi-version| |pypi-license|
+|travis-ci| |pypi-version|
 
 Simple, easy-to-use throttler for asyncio.
 
@@ -99,11 +99,8 @@ with ``aiohttp`` too:
 
             await asyncio.sleep(0.05)
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/asyncio-throttle.svg?style=flat-square
-   :target: https://pypi.python.org/pypi/asyncio-throttle/
-
-.. |pypi-license| image:: https://img.shields.io/pypi/l/asyncio-throttle.svg?style=flat-square
-   :target: https://pypi.python.org/pypi/asyncio-throttle/
+.. |pypi-version| image:: https://badge.fury.io/py/asyncio-throttle.svg
+    :target: https://badge.fury.io/py/asyncio-throttle
 
 .. |travis-ci| image:: https://travis-ci.org/hallazzang/asyncio-throttle.svg?branch=master
     :target: https://travis-ci.org/hallazzang/asyncio-throttle
