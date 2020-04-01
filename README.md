@@ -60,6 +60,8 @@ And the result:
 $ pip install asyncio-throttle
 ```
 
+It requires Python 3.6 or later.
+
 ## Usage
 
 `asyncio_throttle.Throttler` introduces simple APIs: `flush()` and

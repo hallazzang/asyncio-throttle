@@ -8,7 +8,7 @@ with open(os.path.join(here, "README.md")) as f:
 
 setup(
     name="asyncio-throttle",
-    version="1.0.0",
+    version="1.0.1",
     url="https://github.com/hallazzang/asyncio-throttle",
     license="MIT",
     author="Hanjun Kim",
@@ -19,7 +19,7 @@ setup(
     packages=["asyncio_throttle"],
     package_data={"asyncio_throttle": ["py.typed"]},
     include_package_data=True,
-    python_requires=">=3.5",
+    python_requires=">=3.6",
     platforms="any",
     classifiers=[
         "Intended Audience :: Developers",
@@ -28,7 +28,6 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3 :: Only",
-        "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
