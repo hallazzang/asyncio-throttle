@@ -22,12 +22,12 @@ class TestThrottle:
         "rate_limit,workers_to_spawn", [(5, 5), (20, 35), (50, 100),]
     )
     @pytest.mark.asyncio
-    async def test_rate_limiting(self, rate_limit, workers_to_spawn, event_loop):
+    async def test_rate_limiting(self, rate_limit, workers_to_spawn):
         throttler = Throttler(rate_limit)
         logs = deque()
 
         tasks = [
-            event_loop.create_task(self.worker(throttler, logs))
+            asyncio.create_task(self.worker(throttler, logs))
             for _ in range(workers_to_spawn)
         ]
 
