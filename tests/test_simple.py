@@ -27,7 +27,7 @@ class TestThrottle:
         logs = deque()
 
         tasks = [
-            asyncio.create_task(self.worker(throttler, logs))
+            asyncio.ensure_future(self.worker(throttler, logs))
             for _ in range(workers_to_spawn)
         ]
 
