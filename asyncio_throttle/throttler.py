@@ -13,7 +13,7 @@ class Throttler:
         self._task_logs: Deque[float] = deque()
 
     def flush(self):
-        now = time.time()
+        now = time.monotonic()
         while self._task_logs:
             if now - self._task_logs[0] > self.period:
                 self._task_logs.popleft()
@@ -27,7 +27,7 @@ class Throttler:
                 break
             await asyncio.sleep(self.retry_interval)
 
-        self._task_logs.append(time.time())
+        self._task_logs.append(time.monotonic())
 
     async def __aenter__(self):
         await self.acquire()
