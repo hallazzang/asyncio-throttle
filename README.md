@@ -1,7 +1,9 @@
 # asyncio-throttle
 
 [![travis-ci](https://travis-ci.org/hallazzang/asyncio-throttle.svg?branch=master)](https://travis-ci.org/hallazzang/asyncio-throttle)
-[![pypi-version](https://badge.fury.io/py/asyncio-throttle.svg)](https://badge.fury.io/py/asyncio-throttle)
+[![shields-pypi-badge]](https://pypi.org/project/asyncio-throttle/)
+
+[shields-pypi-badge]: https://img.shields.io/pypi/v/asyncio-throttle?style=flat-square&color=blue
 
 Simple, easy-to-use throttler for asyncio.
 
