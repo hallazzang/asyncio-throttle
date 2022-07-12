@@ -5,10 +5,9 @@ from typing import Deque
 
 
 class Throttler:
-    def __init__(self, rate_limit: int, period=1.0, retry_interval=0.01):
+    def __init__(self, rate_limit: int, period=1.0):
         self.rate_limit = rate_limit
         self.period = period
-        self.retry_interval = retry_interval
 
         self._task_logs: Deque[float] = deque()
 
@@ -25,7 +24,8 @@ class Throttler:
             self.flush()
             if len(self._task_logs) < self.rate_limit:
                 break
-            await asyncio.sleep(self.retry_interval)
+            time_to_release = self._task_logs[0] + self.period - time.monotonic()
+            await asyncio.sleep(time_to_release)
 
         self._task_logs.append(time.monotonic())
 
